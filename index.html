@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang pt-br>
+  <title>Responsive flow</title>
+  <!--include mixin/util.pug-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--meta(property="og:image" content="responsive-flow.jpg")-->
+  <!--meta(property="og:image:type" content="image/jpeg")-->
+  <!--meta(property="og:image:width" content="600")-->
+  <!--meta(property="og:image:height" content="315")-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <body>
+    <div id="app">
+      <div class="container-fluid version text-right"><em><small>Alpha version</small></em></div>
+      <header class="app-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1><img src="./img/responsive-flow.png" alt="Responsive flow"></h1>
+              <p>It's a tool to check how our websites behave in different resolutions. To do the test, add the in field below the site url, select the desired resolutions, and then click "Check it out!"</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="settings">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <form method="post" action="javascript:;">
+                <div class="input-group url-master">
+                  <input class="form-control input-lg url-field" type="text" placeholder="http://oglobo.com.br"><span class="input-group-btn">
+                    <button class="btn btn-primary btn-lg btn-check"> <span class="text-btn">Check it out!</span></button></span>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center checkbox-list">
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1920x1080">1920 x 1080
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1890x1080">1890 x 1080
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1680x1050">1680 x 1050
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1600x900">1600 x 900
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1440x900">1440 x 900
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1366x768">1366x768
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1300x768" checked="true">1300 x 768
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1280x1024">1280 x 1024
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1280x800">1280 x 800
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="1024x768" checked="true">1024 x 768
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="768x1024">768 x 1024
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="640x768" checked="true">640 x 768
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="320x480" checked="true">320 x 480
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="320x568">Iphone 5 (320 x 568)
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="375x667">Iphone 6 (375 x 667)
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="414x763">Iphone 6 Plus (414 x 736)
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="375x667">Iphone 6 (375 x 667)
+                    </label>
+                    <label class="checkbox-inline">
+                      <input id="inlineCheckbox1" type="checkbox" value="435x773">Nexus 6P (435 x 773)
+                    </label>
+                  </div>
+                </div>
+                <div class="row introduction-personalize text-center">
+                  <div class="col-md-2 col-md-offset-2 linha"><span></span></div>
+                  <div class="col-md-4">
+                    <p>Personalize the resolution</p>
+                  </div>
+                  <div class="col-md-2 linha"><span></span></div>
+                </div>
+                <div class="row personalize text-center">
+                  <div class="col-md-12">
+                    <div class="form-inline">
+                      <input class="new-resolution-1 form-control input-sm" type="number">
+                      <p>x</p>
+                      <input class="new-resolution-2 form-control input-sm" type="number">
+                      <button class="btn btn-sm btn-add">add </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="iframes">
+        <div class="container-fluid case-resolutions">
+          <div class="all-resolutions"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Developed by - <a href="https://github.com/mateuspaulino" target="_BLANK" title="Mateus Paulino"><strong>Mateus Paulino</strong></a> | <a href="https://opensource.org/licenses/MIT" target="_BLANK" title="The MIT License"><strong>The MIT License (MIT)</strong></a></p>
+        </div>
+      </footer><a class="btn btn-primary btn-lg back-to-top" id="back-to-top" href="#" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./js/bundle.js" type="text/javascript"></script>
+  </body>
+</html>
