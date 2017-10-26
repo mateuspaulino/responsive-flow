@@ -47,8 +47,8 @@
             btnCheck.click(function(){
                 var url = urlField.val();
 
-                //verify http
-                if(url.indexOf('http://')!=-1 || url.indexOf('https://')!=-1){
+                //verify https no more http - url.indexOf('http://')!=-1 ||
+                if(url.indexOf('https://')!=-1){
                     //verify if its valid
                     if(responsiveFlow.validateUrl(url)){
                         //generate iframes
@@ -64,7 +64,7 @@
                         alert("Please enter a valid url");
                     }
                 }else{
-                    alert("Please add http/https on your url");
+                    alert("Please add https on your url");
                 }
             })
         },
