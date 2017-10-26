@@ -1,0 +1,110 @@
+#app
+		.container-fluid.version.text-right
+			em #[small Alpha version]
+		header.app-header
+			.container
+				.row
+					.col-md-8.col-md-offset-2.text-center
+						h1
+							img(src="./img/responsive-flow.png" alt="Responsive flow")
+						p It's a tool to check how our websites behave in different resolutions. To do the test, add the in field below the site url, select the desired resolutions, and then click "Check it out!"
+		main.settings
+			.container
+				.row
+					.col-md-10.col-md-offset-1
+						form(method="post" action="javascript:;")
+							.input-group.url-master
+								//- span.input-group-addon http://
+								input.form-control.input-lg.url-field(type='text' placeholder="http://oglobo.com.br")
+								span.input-group-btn
+									button.btn.btn-primary.btn-lg.btn-check 
+										span.text-btn Check it out!
+							.row
+								.col-md-12.text-center.checkbox-list
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1920x1080')
+										| 1920 x 1080
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1890x1080')
+										| 1890 x 1080
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1680x1050')
+										| 1680 x 1050
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1600x900')
+										| 1600 x 900
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1440x900')
+										| 1440 x 900
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1366x768')
+										| 1366x768
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1300x768' checked="true")
+										| 1300 x 768
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1280x1024')
+										| 1280 x 1024
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1280x800')
+										| 1280 x 800
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='1024x768' checked="true")
+										| 1024 x 768
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='768x1024')
+										| 768 x 1024
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='640x768' checked="true")
+										| 640 x 768
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='320x480' checked="true")
+										| 320 x 480
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='320x568')
+										| Iphone 5 (320 x 568)
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='375x667')
+										| Iphone 6 (375 x 667)
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='414x763')
+										| Iphone 6 Plus (414 x 736)
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='375x667')
+										| Iphone 6 (375 x 667)
+									label.checkbox-inline
+										input#inlineCheckbox1(type='checkbox' value='435x773')
+										| Nexus 6P (435 x 773)
+
+							.row.introduction-personalize.text-center
+								.col-md-2.col-md-offset-2.linha
+									span
+								.col-md-4
+									p Personalize the resolution
+								.col-md-2.linha
+									span
+
+							.row.personalize.text-center
+								.col-md-12
+									.form-inline
+										input.new-resolution-1.form-control.input-sm(type='number')
+										p x
+										input.new-resolution-2.form-control.input-sm(type='number')
+										button.btn.btn-sm.btn-add add 
+		section.iframes
+			.container-fluid.case-resolutions
+				.all-resolutions
+					//- .panel.panel-default.resolution(style="width: 700px")
+					//- 	.panel-heading.text-right
+					//- 		h3.panel-title valor 1 x valor 2
+					//- 	.panel-body
+					//- 		iframe(frameborder="0" src="http://www.w3schools.com/" height="300")
+					//- 			p Your browser does not support iframes.
+					//- 	.panel-footer
+					//- 		h3.panel-title valor 1 x valor 2
+		footer.footer
+			.container
+				p.text-muted Developed by - #[a(href="https://github.com/mateuspaulino" target="_BLANK" title="Mateus Paulino") #[strong Mateus Paulino]] | #[a(href="https://opensource.org/licenses/MIT" target="_BLANK" title="The MIT License") #[strong The MIT License (MIT)]]
+		a#back-to-top.btn.btn-primary.btn-lg.back-to-top(href='#', role='button', title='Click to return on the top page', data-toggle='tooltip', data-placement='left')
+			span.glyphicon.glyphicon-chevron-up
+
