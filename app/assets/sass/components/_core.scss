@@ -25,7 +25,7 @@ html, body{
   .app-header{
     text-align: center;
   	h1{
-  		color: $blue-dark;
+  		// color: $blue-dark;
       max-width: 300px;
       margin: 0 auto;
       img{
@@ -116,7 +116,7 @@ html, body{
         margin-left: auto;
         line-height: 0;
         .panel-heading, .panel-footer{
-          background: $blue-dark;
+          background: #3c0058;
           color: white;
         }
         .panel-body{
@@ -159,7 +159,7 @@ html, body{
     bottom: 42px;
     right: 20px;
     display:none;
-    background: $blue-dark;
+    background: #3c0058;
   }
 
 }
